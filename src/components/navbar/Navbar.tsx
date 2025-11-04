@@ -2,10 +2,17 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="bg-blue-600 text-white p-4 flex gap-4">
-      <Link to="/">Home</Link>
-      <Link to="/categorias">Categorias</Link>
-      <Link to="/categorias/form">Nova Categoria</Link>
-    </nav>
+    <div className="w-full flex justify-center py-4 bg-indigo-900 text-white">
+      <div className="container flex justify-between text-lg mx-8">
+        Fast Farma
+        <div className="flex gap-4">
+          <Link to="/">Home</Link>
+          <Link to="/categorias">Categorias</Link>
+          <Link to="/produtos">Produtos</Link>
+          <Link to="/categorias/cadastrar">Cadastrar Categoria</Link>
+          <Link to="/produtos/cadastrar">Cadastrar Produto</Link>
+        </div>
+      </div>
+    </div>
   );
 }
