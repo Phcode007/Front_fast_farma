@@ -1,25 +1,35 @@
+import ListaCategorias from "../../components/categoria/listacategorias/ListaCategorias"
+
 function Home() {
   return (
-    <div className="bg-gradient-to-r from-blue-600 to-blue-800 flex justify-center">
-      <div className="grid grid-cols-[1fr_1fr] text-white w-full max-w-[1280px]">
-        <div className="flex flex-col gap-4 items-center justify-center pt-4 pb-4">
-          <h2 className="text-5xl font-bold">Bem-vindo à Fast Farma! 💊</h2>
+    <>
+      <div className="bg-[#8FABD4] flex justify-center">
+        <div className="container grid grid-cols-2 text-white">
 
-          <p className="text-xl">
-            Gerencie suas categorias e produtos rapidinho!
-          </p>
+          <div className="flex flex-col gap-4 items-center justify-center py4">
+            
+            <h2 className="text-5xl font-bold">
+              Farmacia Gen
+            </h2>
 
-          <div className="flex justify-center gap-4">
-            <div className="rounded-[0.5rem] text-white border-2 border-solid border-white p-[0.5rem_1rem] cursor-pointer hover:bg-white hover:text-blue-600 transition">
-              Começar Agora
-            </div>
+            <p className="text-xl">
+              Saúde e Bem-Estar para todos!
+            </p>
           </div>
-        </div>
 
-        <div className="flex justify-center"></div>
+          <div className="flex justify-center">
+            <img
+              src="https://i.imgur.com/1W500uH.png"
+              alt="Imagem Página Home"
+              className="w-2/3 rounded-3xl"
+            />
+          </div>
+
+        </div>
       </div>
-    </div>
-  );
+      <ListaCategorias />
+    </>
+  )
 }
 
-export default Home;
+export default Home
