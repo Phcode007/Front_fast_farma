@@ -13,7 +13,7 @@ function Home() {
 
           <div className="flex justify-center">
             <img
-              src="https://imgur.com/a/8LpneQR"
+              src="./assets/logo/Logo da FastFarma.png"
               alt="Logo Fast Farma"
               className="w-2/3 rounded-3xl"
             />
