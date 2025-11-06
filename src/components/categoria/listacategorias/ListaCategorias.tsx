@@ -29,6 +29,8 @@ function ListaCategorias() {
     }
   }
 
+  console.log(categorias);
+
   return (
     <>
       {isLoading && (
@@ -46,9 +48,9 @@ function ListaCategorias() {
           )}
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {categorias.map((categoria) => (
+            {/* {categorias.map((categoria) => (
               <CardCategoria key={categoria.id} categoria={categoria} />
-            ))}
+            ))} */}
           </div>
         </div>
       </div>
